@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PT. Lestari Jaya Indonesia Maju</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="Logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#produk">Produk</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">PT. Lestari Jaya Indonesia Maju</h1>
+      <nav class="space-x-4">
+        <a href="#tentang" class="hover:underline">Tentang Kami</a>
+        <a href="#produk" class="hover:underline">Produk</a>
+        <a href="#kontak" class="hover:underline">Kontak</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>PT. Lestari Jaya Indonesia Maju</h1>
-      <p>Industri Repacking Minyak Goreng Sawit</p>
-    </div>
+  <!-- Hero -->
+  <section class="bg-green-100 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Mitra Terpercaya untuk Solusi Konsumen Indonesia</h2>
+    <p class="text-lg text-gray-600">Kami menghadirkan produk berkualitas untuk masa depan yang lebih baik</p>
   </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2>Tentang Kami</h2>
-      <p>PT. Lestari Jaya Indonesia Maju merupakan perusahaan di bidang industri repacking minyak goreng sawit, dan telah memiliki pengalaman yang cukup lama di bidang ini. PT Lestari Jaya Indonesia Maju memproduksi minyak goreng sawit dalam kemasan kecil maupun besar dengan kualitas yang terjamin dan harga yang kompetitif.</p>
-      <p>Produk utama dari PT Lestari Jaya Indonesia Maju adalah minyak goreng kelapa sawit dalam kemasan botol dan plastik dengan berbagai ukuran. PT Lestari Jaya Indonesia Maju juga memproduksi minyak goreng spesial untuk restoran dan industri makanan. Produk-produk ini dipasarkan dengan merek dagang yang sudah dikenal oleh masyarakat dan tersedia untuk dijual kepada toko-toko dan industri makanan.</p>
-      <p><strong>Minyak goreng kelapa sawit terbaik di kelasnya.</strong></p>
-    </div>
+  <!-- Tentang Kami -->
+  <section id="tentang" class="py-16 px-6 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4 text-center">Tentang Kami</h3>
+    <p class="text-gray-700 text-center">PT. Lestari Jaya Indonesia Maju adalah perusahaan yang bergerak di bidang produksi dan distribusi produk konsumen berkualitas tinggi. Kami berkomitmen untuk memberikan nilai terbaik bagi masyarakat dan lingkungan melalui inovasi dan keberlanjutan.</p>
   </section>
 
-  <section class="misi">
-    <div class="container">
-      <h2>Visi & Misi</h2>
-      <p>Untuk merealisasikan visi program perusahaan minyak goreng kelapa sawit terbaik di kelasnya:</p>
-      <ul>
-        <li>Memberikan solusi atas kebutuhan minyak goreng kepada konsumen</li>
-        <li>Menciptakan tim sinergi yang utuh dan berkualitas</li>
-        <li>Menumbuhkan kreativitas dan kompetensi karyawan</li>
-        <li>Meningkatkan kepedulian terhadap masyarakat untuk kesejahteraan</li>
-        <li>Memberikan kepuasan kepada pelanggan</li>
-      </ul>
-    </div>
-  </section>
+  <!-- Produk Kami -->
+  <section id="produk" class="bg-gray-50 py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">Produk Kami</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Produk 1 -->
+        <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/300x200" alt="Produk A" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2">Produk A</h4>
+          <p class="text-gray-600 text-sm">Produk A adalah solusi praktis untuk kebutuhan rumah tangga Anda dengan kualitas terbaik.</p>
+        </div>
 
-  <section class="produk" id="produk">
-    <div class="container">
-      <h2>Produk Kami</h2>
-      <p>Minyak goreng botol ukuran 1L - Harga: Rp182.500 / karton</p>
-      <div class="produk-gallery">
-        <img src="images/produk1.jpg" alt="Produk 1">
-        <img src="images/produk2.jpg" alt="Produk 2">
-        <img src="images/produk3.jpg" alt="Produk 3">
+        <!-- Produk 2 -->
+        <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/300x200" alt="Produk B" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2">Produk B</h4>
+          <p class="text-gray-600 text-sm">Produk B memberikan hasil maksimal untuk keperluan industri dan komersial Anda.</p>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/300x200" alt="Produk C" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2">Produk C</h4>
+          <p class="text-gray-600 text-sm">Diformulasikan secara khusus untuk performa optimal dan efisiensi tinggi.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="kontak" id="kontak">
-    <div class="container">
-      <h2>Kontak Kami</h2>
-      <p>Alamat: RT.005/RW.004, Bunder, Kec. Cikupa, Kabupaten Tangerang, Banten 15135</p>
-      <p>WhatsApp: <a href="https://wa.me/6285821613271">+62 858-2161-3271</a></p>
+  <!-- Kontak -->
+  <section id="kontak" class="py-16 px-6 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4 text-center">Kontak Kami</h3>
+    <p class="text-center mb-6">Hubungi kami untuk informasi lebih lanjut mengenai produk dan layanan kami.</p>
+    <div class="text-center">
+      <p>Email: info@lestari-jaya.co.id</p>
+      <p>Telepon: +62 812-3456-7890</p>
+      <p>Alamat: Jl. Industri No. 123, Jakarta</p>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 PT. Lestari Jaya Indonesia Maju</p>
+  <footer class="bg-green-700 text-white text-center p-4">
+    &copy; 2025 PT. Lestari Jaya Indonesia Maju. All rights reserved.
   </footer>
 </body>
 </html>
