@@ -30,14 +30,16 @@
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-white via-green-50 to-green-100 text-gray-800">
+<body class="bg-gradient-to-br from-white via-green-50 to-green-100 text-gray-800 scroll-smooth">
   <!-- Header -->
   <header class="bg-white/70 backdrop-blur shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
       <h1 class="text-2xl font-extrabold text-green-700 tracking-wide">PT. Lestari Jaya Indonesia Maju</h1>
       <nav class="space-x-6 text-sm font-medium text-gray-700">
         <a href="#tentang" class="hover:text-green-600 transition">Tentang Kami</a>
+        <a href="#visimisi" class="hover:text-green-600 transition">Visi & Misi</a>
         <a href="#produk" class="hover:text-green-600 transition">Produk</a>
+        <a href="#tim" class="hover:text-green-600 transition">Tim</a>
         <a href="#kontak" class="hover:text-green-600 transition">Kontak</a>
       </nav>
     </div>
@@ -66,64 +68,75 @@
     </div>
   </section>
 
+  <!-- Visi Misi -->
+  <section id="visimisi" class="bg-gray-50 py-20 px-6" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-4xl font-bold mb-6 text-green-700">Visi & Misi</h3>
+      <p class="text-lg text-gray-700 mb-6">Visi kami adalah menjadi pemimpin industri nasional yang berkontribusi terhadap keberlanjutan dan kemajuan Indonesia. Misi kami meliputi:</p>
+      <ul class="text-left max-w-xl mx-auto text-gray-700 list-disc list-inside space-y-2">
+        <li>Menghadirkan produk berkualitas tinggi yang inovatif.</li>
+        <li>Membangun kemitraan yang kokoh dan saling menguntungkan.</li>
+        <li>Memberikan dampak positif bagi lingkungan dan masyarakat.</li>
+        <li>Mengembangkan SDM yang unggul dan profesional.</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Produk Kami -->
-  <section id="produk" class="bg-gray-100 py-20 px-6" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto">
-      <h3 class="text-4xl font-bold mb-12 text-center text-green-700">Produk Kami</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        <!-- Produk Loop -->
-        <!-- Tambah produk baru dengan format di bawah -->
-        <!-- Produk Sample -->
-        <div class="glass p-6 rounded-3xl text-center transform hover:-translate-y-1 transition duration-300">
-          <a href="https://via.placeholder.com/800x600" class="glightbox">
-            <img src="https://via.placeholder.com/300x200" alt="Produk D" class="rounded-xl mb-4 mx-auto">
-          </a>
-          <h4 class="text-xl font-semibold mb-2 text-green-700">Produk D</h4>
-          <p class="text-gray-700 text-sm">Kualitas terbaik untuk kebutuhan retail dengan desain menarik dan ramah lingkungan.</p>
+  <section id="produk" class="bg-white py-20 px-6" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-4xl font-bold mb-10 text-green-700">Produk Kami</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div class="bg-green-50 rounded-xl p-6 shadow text-center hover:scale-105 transition">
+          <img src="https://via.placeholder.com/200" class="mx-auto mb-4 rounded shadow-md" alt="Minyak Goreng">
+          <h4 class="text-xl font-semibold text-green-700">Minyak Goreng Sawit</h4>
+          <p class="text-gray-700 text-sm mt-2">Minyak goreng berkualitas tinggi untuk kebutuhan rumah tangga dan industri.</p>
         </div>
-        <div class="glass p-6 rounded-3xl text-center transform hover:-translate-y-1 transition duration-300">
-          <a href="https://via.placeholder.com/800x600" class="glightbox">
-            <img src="https://via.placeholder.com/300x200" alt="Produk E" class="rounded-xl mb-4 mx-auto">
-          </a>
-          <h4 class="text-xl font-semibold mb-2 text-green-700">Produk E</h4>
-          <p class="text-gray-700 text-sm">Inovasi terbaru untuk kebutuhan energi dan efisiensi dalam operasional industri.</p>
+        <div class="bg-green-50 rounded-xl p-6 shadow text-center hover:scale-105 transition">
+          <img src="https://via.placeholder.com/200" class="mx-auto mb-4 rounded shadow-md" alt="Minyak Goreng Premium">
+          <h4 class="text-xl font-semibold text-green-700">Minyak Goreng Premium</h4>
+          <p class="text-gray-700 text-sm mt-2">Minyak premium dengan kemurnian tinggi untuk cita rasa terbaik.</p>
         </div>
-        <div class="glass p-6 rounded-3xl text-center transform hover:-translate-y-1 transition duration-300">
-          <a href="https://via.placeholder.com/800x600" class="glightbox">
-            <img src="https://via.placeholder.com/300x200" alt="Produk F" class="rounded-xl mb-4 mx-auto">
-          </a>
-          <h4 class="text-xl font-semibold mb-2 text-green-700">Produk F</h4>
-          <p class="text-gray-700 text-sm">Solusi modern yang mendukung gaya hidup aktif dan peduli lingkungan.</p>
+        <div class="bg-green-50 rounded-xl p-6 shadow text-center hover:scale-105 transition">
+          <img src="https://via.placeholder.com/200" class="mx-auto mb-4 rounded shadow-md" alt="Produk Lain">
+          <h4 class="text-xl font-semibold text-green-700">Produk Turunan Sawit</h4>
+          <p class="text-gray-700 text-sm mt-2">Produk turunan sawit lain seperti sabun dan bahan kimia industri.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Kontak Kami -->
-  <section id="kontak" class="py-20 px-6 bg-white" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto text-center">
-      <h3 class="text-4xl font-bold mb-6 text-green-700">Kontak Kami</h3>
-      <p class="text-lg mb-6 text-gray-700">Kami siap menjawab pertanyaan Anda dan membantu memenuhi kebutuhan bisnis Anda.</p>
-      <div class="text-gray-800 space-y-2">
-        <p><strong>Email:</strong> info@lestari-jaya.co.id</p>
-        <p><strong>Telepon:</strong> +62 812-3456-7890</p>
-        <p><strong>Alamat:</strong> Jl. Industri No. 123, Jakarta</p>
+  <!-- Tim Manajemen -->
+  <section id="tim" class="bg-white py-20 px-6" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-4xl font-bold mb-10 text-green-700">Tim Manajemen</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div class="bg-green-50 rounded-xl p-6 shadow text-center">
+          <img src="https://via.placeholder.com/150" class="mx-auto rounded-full mb-4" alt="CEO">
+          <h4 class="text-xl font-semibold text-green-700">Andi Wijaya</h4>
+          <p class="text-gray-700">Direktur Utama</p>
+        </div>
+        <div class="bg-green-50 rounded-xl p-6 shadow text-center">
+          <img src="https://via.placeholder.com/150" class="mx-auto rounded-full mb-4" alt="COO">
+          <h4 class="text-xl font-semibold text-green-700">Siti Marlina</h4>
+          <p class="text-gray-700">Direktur Operasional</p>
+        </div>
+        <div class="bg-green-50 rounded-xl p-6 shadow text-center">
+          <img src="https://via.placeholder.com/150" class="mx-auto rounded-full mb-4" alt="CFO">
+          <h4 class="text-xl font-semibold text-green-700">Budi Prasetyo</h4>
+          <p class="text-gray-700">Direktur Keuangan</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-green-700 text-white text-center p-6 text-sm">
-    <div>&copy; 2025 PT. Lestari Jaya Indonesia Maju. All rights reserved.</div>
-    <div class="mt-2 space-x-4">
-      <a href="#" class="hover:underline">Kebijakan Privasi</a>
-      <a href="#" class="hover:underline">Syarat & Ketentuan</a>
-    </div>
-  </footer>
+  <!-- Kontak Kami (Tetap) -->
 
-  <!-- AOS JS -->
+  <!-- Footer (Tetap) -->
+
+  <!-- AOS & GLightbox -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
-  <!-- GLightbox JS -->
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script>
     const lightbox = GLightbox({ selector: '.glightbox' });
