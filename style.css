@@ -1,99 +1,120 @@
-/* Reset dan Font */
+/* style.css untuk PT. Lestari Jaya Indonesia Maju */
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body {
-  background: #f4f4f4;
+  background-color: #fefefe;
   color: #333;
-  overflow-x: hidden;
+  line-height: 1.6;
 }
-header {
-  background: #083344;
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background: #004d40;
   color: white;
-  text-align: center;
-  padding: 2rem;
-  animation: fadeIn 1s ease-in-out;
+  padding: 20px 0;
 }
-.logo {
-  max-width: 120px;
-  margin-bottom: 1rem;
-}
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(50px);
-  animation: slideUp 1s ease-out forwards;
-}
-section h2 {
-  color: #083344;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  animation: fadeIn 1.5s ease-in-out;
-}
-ul {
-  margin-left: 1.2rem;
-}
-.gallery {
+
+.header .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(to right, #ffcc80, #ffe0b2);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.about p, .misi p, .misi ul, .produk p, .kontak p {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.misi ul {
+  padding-left: 20px;
+}
+
+.produk-gallery {
+  display: flex;
+  gap: 20px;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-  animation: fadeIn 2s ease-in-out;
 }
-.gallery img {
+
+.produk-gallery img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.gallery img:hover {
-  transform: scale(1.1);
-}
+
 footer {
-  background: #083344;
+  background: #004d40;
   color: white;
   text-align: center;
-  padding: 2rem;
-  margin-top: 3rem;
-  animation: fadeIn 1.5s ease-in-out;
-}
-a {
-  color: #25d366;
-  text-decoration: none;
-}
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-/* Animasi */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
+  .produk-gallery {
+    justify-content: center;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
 }
