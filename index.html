@@ -18,8 +18,8 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Tentang Kami</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Produk Kami</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -89,7 +89,7 @@ Produk utama dari PT Lestari Jaya Indonesia Maju adalah minyak goreng kelapa saw
         </section>
 
         <section class="portfolio section" id="portfolio">
-            <h2 class="section-title">Portfolio</h2>
+            <h2 class="section-title">Produk Kami</h2>
 
             <div class="portfolio-container bd-grid">
                 <div class="portfolio-img">
@@ -158,7 +158,7 @@ Produk utama dari PT Lestari Jaya Indonesia Maju adalah minyak goreng kelapa saw
                     <span class="contact-text">Sacramento, California, USA</span>
                 </div>
 
-                <form action="" class="contact-form">
+                <form class="contact-form" onsubmit="sendToWhatsApp(); return false;">
                     <div class="contact-inputs">
                         <input type="text" placeholder="Name" class="contact-input">
                         <input type="email" placeholder="Email" class="contact-input">
@@ -202,5 +202,20 @@ Produk utama dari PT Lestari Jaya Indonesia Maju adalah minyak goreng kelapa saw
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
+
+<script>
+  function sendToWhatsApp() {
+    var name = document.getElementsByName("name")[0].value;
+    var email = document.getElementsByName("email")[0].value;
+    var message = document.getElementsByName("message")[0].value;
+
+    var phoneNumber = "6285267769686"; // Ganti dengan nomor WA tujuan (tanpa +)
+    var url = "https://wa.me/" + phoneNumber + "?text=" 
+              + encodeURIComponent("Nama: " + name + "\nEmail: " + email + "\nPesan: " + message);
+
+    window.open(url, '_blank');
+  }
+</script>
 </body>
+
 </html>
